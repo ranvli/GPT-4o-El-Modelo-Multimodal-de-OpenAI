@@ -16,8 +16,6 @@ format:
 highlight-style: github
 ---
 
-![Logo GPT-4o](images/openai-logo.png){width="120" .center}
-
 # GPT-4o  
 ### EL MODELO MULTIMODAL DE OPENAI
 
@@ -57,34 +55,20 @@ GPT-4o es un modelo de:
 - Más rápido y económico que GPT-4 Turbo  
 :::
 
-<div style="text-align:center; margin-top:20px;">
-  <img src="images/arch-gpt4o.png" width="70%" />
-</div>
-
----
-
-## 🎬 Ejemplo visual
-
-<div style="text-align:center">
-  <img src="images/ui-video.png" width="80%" />
-</div>
-
-> <span class="fragment">GPT-4o acerca la interacción IA–humano a un diálogo natural y multimodal.</span>
-
 ---
 
 ## 💡 Aplicaciones reales
 
 :::{.columns}
-::: {.column width="55%"}
+::: {.column width="60%"}
 - <span class="fragment">🎓 Educación personalizada</span>  
 - <span class="fragment">🛠️ Soporte técnico con imagen + voz</span>  
 - <span class="fragment">♿ Accesibilidad para baja visión</span>  
 - <span class="fragment">🏥 Análisis de imágenes médicas</span>  
 - <span class="fragment">🌐 Traducción simultánea</span>
 :::
-::: {.column width="45%"}
-<img src="images/edu.jpg" width="100%" style="border-radius:12px;" />
+::: {.column width="40%"}
+<!-- Imagen eliminada -->
 :::
 :::
 
@@ -108,7 +92,7 @@ GPT-4o es un modelo de:
 | Multimodalidad            | Limitada        | Nativa     |
 | Entrada / salida de voz   | No              | Sí         |
 | Latencia                  | Alta            | Baja       |
-| Costo API                 | Alto            | ↓          |
+| Costo API                 | Alto            | Más accesible          |
 
 ---
 
@@ -145,32 +129,24 @@ GPT-4o es un modelo de:
 
 ---
 
-<!-- _auto-animate: false -->
 ## 🙌 ¡Gracias por su atención!
 
 Presentación elaborada con **Quarto + Reveal.js**  
 _Periodo 2-2025 – CENFOTEC_
 
-<div style="text-align:center; margin-top:20px;">
-  <img src="images/openai-logo.png" width="80" />
-</div>
-
 ---
 
-<!-- _auto-animate: false -->
 
-<div style="margin-top:120px;">
- ❓ Preguntas
-</div>
+## ❓ Preguntas
 
 :::{.columns}
-::: {.column width="48%"}
-<div style="margin-top:70px;">
+::: {.column width="55%"}
+<div style="margin-top:50px;">
   **Siéntanse libres de consultar**
 </div>
 :::
-::: {.column width="32%"}
+::: {.column width="40%"}
 <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmluZXBvdHNvazU3eHN0eWFnNm81OTExaXp0a3B1ZXYwZGFyNGp3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oS8QRKMc1SFVNuUMrG/giphy.gif"
-     width="100%" style="border-radius:12px;" />
+     width="50%" style="border-radius:12px;" />
 :::
 :::
