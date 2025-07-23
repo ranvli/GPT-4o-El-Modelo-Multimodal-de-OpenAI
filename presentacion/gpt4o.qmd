@@ -1,0 +1,134 @@
+---
+title: "GPT-4o: El Modelo Multimodal de OpenAI"
+format: 
+  revealjs:
+    theme: solarized
+    transition: slide
+    slide-number: true
+    center: true
+    toc: false
+---
+
+## 🎓 Título del tema
+
+**Modelo de IA Multimodal GPT-4o**  
+Presentado por: Randall Vargas Li   
+Curso: Diseño de Sistemas de Software  
+Universidad CENFOTEC
+
+---
+
+## 🎯 Objetivos de la investigación
+
+- Sintetizar los hallazgos sobre GPT-4o.  
+- Clasificar el modelo en el contexto actual de IA.  
+- Identificar aplicaciones reales y su impacto.  
+- Comunicar de forma clara usando **Quarto** + Reveal.js.
+
+---
+
+## 🧠 Clasificación del modelo
+
+GPT-4o es un modelo de:
+
+- Inteligencia Artificial Generativa  
+- Multimodalidad nativa  
+- Propósito general (AGI - Artificial General Intelligence)
+
+> Forma parte de la **familia GPT-4**, pero con capacidades expandidas.
+
+---
+
+## ⚙️ Características principales
+
+- Procesamiento nativo de:
+  - Texto  
+  - Imágenes  
+  - Audio (voz)
+- Tiempo de respuesta real  
+- Integración directa de entrada y salida de voz  
+- Más rápido y económico que GPT-4 turbo
+
+---
+
+## 🎬 Ejemplo visual
+
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/OpenAI_Logo.svg/1024px-OpenAI_Logo.svg.png)
+
+> GPT-4o es parte de la evolución de los modelos de OpenAI hacia una IA más natural y accesible.
+
+---
+
+## 💡 Aplicaciones reales
+
+::: incremental
+- Educación personalizada con entrada visual y respuestas habladas  
+- Soporte técnico con imágenes del error + comandos por voz  
+- Accesibilidad para personas con baja visión  
+- Automatización de análisis de imágenes médicas  
+- Traducción simultánea multimodal
+:::
+
+---
+
+## 📈 Tendencias
+
+::: incremental
+- Integración con hardware (IoT, gafas inteligentes)  
+- Interfaces sin pantallas  
+- Asistentes autónomos que “ven y oyen”  
+- Proyectos open-source inspirados en modelos multimodales
+:::
+
+---
+
+## ⚖️ Comparación: GPT-4 vs GPT-4o
+
+| Característica       | GPT-4           | GPT-4o            |
+|----------------------|-----------------|--------------------|
+| Multimodalidad       | Limitada        | Nativa completa    |
+| Entrada de voz       | No              | Sí                 |
+| Salida hablada       | No              | Sí, natural        |
+| Latencia             | Alta             | Baja               |
+| Costo API            | Alto            | Más accesible      |
+
+---
+
+## ✅ Ventajas
+
+- Interacción más natural  
+- Rápido y accesible  
+- Ideal para desarrollo de productos modernos  
+- Gratis en versión limitada desde ChatGPT
+
+---
+
+## ⚠️ Desafíos
+
+- Moderación de contenido sensible  
+- Riesgos de desinformación generada por voz o imagen  
+- Privacidad y ética de uso  
+- Alta demanda computacional
+
+---
+
+## 🧠 Conclusiones
+
+- GPT-4o representa una nueva generación de IA más intuitiva  
+- La multimodalidad no es el futuro: **ya es el presente**  
+- Cada industria puede beneficiarse de este modelo  
+- Aporta a la accesibilidad, productividad y educación
+
+---
+
+## 🙌 ¡Gracias por su atención!
+
+📍Presentación elaborada en  
+**Quarto + Reveal.js** 
+Periodo 2-2025 – CENFOTEC
+
+---
+
+## ❓¿Preguntas?
+
+![](https://media.giphy.com/media/l0MYGb1LuZ3n7dRnO/giphy.gif)
