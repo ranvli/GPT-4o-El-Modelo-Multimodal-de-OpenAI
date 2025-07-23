@@ -1,29 +1,40 @@
 ---
 title: "GPT-4o: El Modelo Multimodal de OpenAI"
+author: "Randall Vargas Li"
 format: 
   revealjs:
-    theme: solarized
+    theme: dracula
     transition: slide
     slide-number: true
     center: true
     toc: false
+    chalkboard: true
+    width: 1280
+    height: 720
+highlight-style: github
 ---
 
 ## 🎓 Título del tema
 
 **Modelo de IA Multimodal GPT-4o**  
-Presentado por: Randall Vargas Li   
-Curso: Diseño de Sistemas de Software  
-Universidad CENFOTEC
+Presentado por: *Randall Vargas Li*  
+Curso: *Diseño de Sistemas de Software*  
+**Universidad CENFOTEC**
+
+<div style="text-align:center">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/OpenAI_Logo.svg/512px-OpenAI_Logo.svg.png" width="120" style="margin-top:20px"/>
+</div>
 
 ---
 
 ## 🎯 Objetivos de la investigación
 
-- Sintetizar los hallazgos sobre GPT-4o.  
-- Clasificar el modelo en el contexto actual de IA.  
-- Identificar aplicaciones reales y su impacto.  
-- Comunicar de forma clara usando **Quarto** + Reveal.js.
+::: incremental
+- Sintetizar los hallazgos sobre GPT-4o  
+- Clasificar el modelo en el contexto actual de IA  
+- Identificar aplicaciones reales y su impacto  
+- Comunicar de forma clara usando **Quarto + Reveal.js**
+:::
 
 ---
 
@@ -31,42 +42,56 @@ Universidad CENFOTEC
 
 GPT-4o es un modelo de:
 
-- Inteligencia Artificial Generativa  
-- Multimodalidad nativa  
-- Propósito general (AGI - Artificial General Intelligence)
+- {.fragment} Inteligencia Artificial Generativa  
+- {.fragment} Multimodalidad nativa  
+- {.fragment} Propósito general (AGI - Artificial General Intelligence)
 
-> Forma parte de la **familia GPT-4**, pero con capacidades expandidas.
+> {.fragment} Parte de la familia **GPT-4**, pero con capacidades expandidas.
 
 ---
 
 ## ⚙️ Características principales
 
+::: incremental
 - Procesamiento nativo de:
   - Texto  
   - Imágenes  
   - Audio (voz)
 - Tiempo de respuesta real  
-- Integración directa de entrada y salida de voz  
-- Más rápido y económico que GPT-4 turbo
+- Entrada y salida de voz integradas  
+- Más rápido y económico que GPT-4 Turbo
+:::
+
+<div style="text-align:center; margin-top: 20px;">
+  <img src="https://miro.medium.com/v2/resize:fit:800/format:webp/1*kGp3p1LwF_81XTJzq7m57A.png" width="70%"/>
+</div>
 
 ---
 
 ## 🎬 Ejemplo visual
 
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/OpenAI_Logo.svg/1024px-OpenAI_Logo.svg.png)
+<div style="text-align:center">
+  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*zPoX0_T7-AZ4QuFvXtYybA.png" width="80%" />
+</div>
 
-> GPT-4o es parte de la evolución de los modelos de OpenAI hacia una IA más natural y accesible.
+> {.fragment} GPT-4o representa la evolución hacia una IA más **natural, rápida y accesible**.
 
 ---
 
 ## 💡 Aplicaciones reales
 
-::: incremental
-- Educación personalizada con entrada visual y respuestas habladas  
-- Soporte técnico con imágenes del error + comandos por voz  
-- Accesibilidad para personas con baja visión  
-- Automatización de análisis de imágenes médicas  
-- Traducción simultánea multimodal
+:::{.columns}
+::: {.column width="60%"}
+- 🎓 Educación personalizada  
+- 🛠️ Soporte técnico con imagen + voz  
+- ♿ Accesibilidad para baja visión  
+- 🏥 Análisis de imágenes médicas  
+- 🌐 Traducción simultánea
+:::
+
+::: {.column width="40%"}
+<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981d?fit=crop&w=500&q=80" width="100%" style="border-radius: 12px;" />
+:::
 :::
 
 ---
@@ -77,58 +102,74 @@ GPT-4o es un modelo de:
 - Integración con hardware (IoT, gafas inteligentes)  
 - Interfaces sin pantallas  
 - Asistentes autónomos que “ven y oyen”  
-- Proyectos open-source inspirados en modelos multimodales
+- Proyectos open-source multimodales
 :::
 
 ---
 
 ## ⚖️ Comparación: GPT-4 vs GPT-4o
 
-| Característica       | GPT-4           | GPT-4o            |
+| Característica       | GPT-4           | **GPT-4o**        |
 |----------------------|-----------------|--------------------|
 | Multimodalidad       | Limitada        | Nativa completa    |
 | Entrada de voz       | No              | Sí                 |
 | Salida hablada       | No              | Sí, natural        |
-| Latencia             | Alta             | Baja               |
+| Latencia             | Alta            | Baja               |
 | Costo API            | Alto            | Más accesible      |
+
+<div style="text-align:center">
+  <img src="https://openai.com/_next/image?url=%2Fimages%2Fmodel-card-gpt-4o%2Fhero%2Fvideo-ui.png&w=1080&q=75" width="80%" />
+</div>
 
 ---
 
 ## ✅ Ventajas
 
+::: incremental
 - Interacción más natural  
 - Rápido y accesible  
-- Ideal para desarrollo de productos modernos  
+- Ideal para productos modernos  
 - Gratis en versión limitada desde ChatGPT
+:::
 
 ---
 
 ## ⚠️ Desafíos
 
+::: incremental
 - Moderación de contenido sensible  
-- Riesgos de desinformación generada por voz o imagen  
+- Desinformación generada por IA  
 - Privacidad y ética de uso  
 - Alta demanda computacional
+:::
 
 ---
 
 ## 🧠 Conclusiones
 
-- GPT-4o representa una nueva generación de IA más intuitiva  
-- La multimodalidad no es el futuro: **ya es el presente**  
-- Cada industria puede beneficiarse de este modelo  
-- Aporta a la accesibilidad, productividad y educación
+::: incremental
+- GPT-4o marca una nueva generación de IA  
+- La multimodalidad ya es una realidad  
+- Impacta positivamente en educación, salud, productividad  
+- Aumenta la accesibilidad para millones de personas
+:::
 
 ---
 
 ## 🙌 ¡Gracias por su atención!
 
 📍Presentación elaborada en  
-**Quarto + Reveal.js** 
-Periodo 2-2025 – CENFOTEC
+**Quarto + Reveal.js**  
+*Periodo 2-2025 – CENFOTEC*
+
+<div style="text-align:center; margin-top: 20px;">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/OpenAI_Logo.svg/512px-OpenAI_Logo.svg.png" width="80" />
+</div>
 
 ---
 
 ## ❓¿Preguntas?
 
-![](https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmluZXBvdHNvazU3eHN0eWFnNm81OTExaXp0a3B1ZXYwZGFyNGp3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oS8QRKMc1SFVNuUMrG/giphy.gif)
+<div style="text-align:center">
+  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmluZXBvdHNvazU3eHN0eWFnNm81OTExaXp0a3B1ZXYwZGFyNGp3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oS8QRKMc1SFVNuUMrG/giphy.gif" width="50%" />
+</div>
