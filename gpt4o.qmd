@@ -16,7 +16,7 @@ format:
 highlight-style: github
 ---
 
-# GPT-4o  
+# GPT-4o  <img src="https://media.discordapp.net/attachments/1395566286439710772/1397716822672932994/a8302d1d-c358-4526-8769-e00c26efce14.png?ex=6882bcba&is=68816b3a&hm=d71b426997926fe057cdcea091c16042683d874a820fbbef9bd4ec814e59327f&=&format=webp&quality=lossless&width=856&height=856" width="25%" />
 ### EL MODELO MULTIMODAL DE OPENAI
 
 <small>Presentado por Randall Vargas Li · CENFOTEC – 2-2025</small>
@@ -68,7 +68,6 @@ GPT-4o es un modelo de:
 - <span class="fragment">🌐 Traducción simultánea</span>
 :::
 ::: {.column width="40%"}
-<!-- Imagen eliminada -->
 :::
 :::
 
@@ -137,16 +136,13 @@ _Periodo 2-2025 – CENFOTEC_
 ---
 
 
-## ❓ Preguntas
+## <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHkxNGhuenM5ZjFwcmgxOGQ2aW1sbm5sNDBvdTU5b2JhYTg2a3JseSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/d5aiqCZFmvZtMWEebC/giphy.gif"
+     width="10%" style="border-radius:12px;" /> Preguntas
 
 :::{.columns}
 ::: {.column width="55%"}
 <div style="margin-top:50px;">
   **Siéntanse libres de consultar**
 </div>
-:::
-::: {.column width="40%"}
-<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmluZXBvdHNvazU3eHN0eWFnNm81OTExaXp0a3B1ZXYwZGFyNGp3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oS8QRKMc1SFVNuUMrG/giphy.gif"
-     width="50%" style="border-radius:12px;" />
 :::
 :::
