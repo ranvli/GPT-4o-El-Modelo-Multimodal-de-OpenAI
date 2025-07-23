@@ -1,29 +1,27 @@
 ---
 title: "GPT-4o: El Modelo Multimodal de OpenAI"
 author: "Randall Vargas Li"
-format: 
+format:
   revealjs:
     theme: dracula
     transition: slide
+    background-transition: fade
     slide-number: true
     center: true
     toc: false
     chalkboard: true
     width: 1280
     height: 720
+    auto-animate: true
 highlight-style: github
 ---
 
-## 🎓 Título del tema
+![Logo GPT-4o](images/openai-logo.png){width="120" .center}
 
-**Modelo de IA Multimodal GPT-4o**  
-Presentado por: *Randall Vargas Li*  
-Curso: *Diseño de Sistemas de Software*  
-**Universidad CENFOTEC**
+# GPT-4o  
+### EL MODELO MULTIMODAL DE OPENAI
 
-<div style="text-align:center">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/OpenAI_Logo.svg/512px-OpenAI_Logo.svg.png" width="120" style="margin-top:20px"/>
-</div>
+<small>Presentado por Randall Vargas Li · CENFOTEC – 2-2025</small>
 
 ---
 
@@ -33,7 +31,7 @@ Curso: *Diseño de Sistemas de Software*
 - Sintetizar los hallazgos sobre GPT-4o  
 - Clasificar el modelo en el contexto actual de IA  
 - Identificar aplicaciones reales y su impacto  
-- Comunicar de forma clara usando **Quarto + Reveal.js**
+- Comunicar con **Quarto + Reveal.js**  
 :::
 
 ---
@@ -42,28 +40,25 @@ Curso: *Diseño de Sistemas de Software*
 
 GPT-4o es un modelo de:
 
-- {.fragment} Inteligencia Artificial Generativa  
-- {.fragment} Multimodalidad nativa  
-- {.fragment} Propósito general (AGI - Artificial General Intelligence)
+- <span class="fragment">Inteligencia Artificial Generativa</span>  
+- <span class="fragment">Multimodalidad nativa</span>  
+- <span class="fragment">Propósito general (incipiente AGI)</span>  
 
-> {.fragment} Parte de la familia **GPT-4**, pero con capacidades expandidas.
+> <span class="fragment">Evolución de la familia **GPT-4** con capacidades expandidas.</span>
 
 ---
 
 ## ⚙️ Características principales
 
 ::: incremental
-- Procesamiento nativo de:
-  - Texto  
-  - Imágenes  
-  - Audio (voz)
-- Tiempo de respuesta real  
-- Entrada y salida de voz integradas  
-- Más rápido y económico que GPT-4 Turbo
+- Procesamiento nativo de texto, imágenes y audio  
+- Respuestas en **tiempo real**  
+- Entrada / salida de voz integradas  
+- Más rápido y económico que GPT-4 Turbo  
 :::
 
-<div style="text-align:center; margin-top: 20px;">
-  <img src="https://miro.medium.com/v2/resize:fit:800/format:webp/1*kGp3p1LwF_81XTJzq7m57A.png" width="70%"/>
+<div style="text-align:center; margin-top:20px;">
+  <img src="images/arch-gpt4o.png" width="70%" />
 </div>
 
 ---
@@ -71,26 +66,25 @@ GPT-4o es un modelo de:
 ## 🎬 Ejemplo visual
 
 <div style="text-align:center">
-  <img src="https://miro.medium.com/v2/resize:fit:1400/format:webp/1*zPoX0_T7-AZ4QuFvXtYybA.png" width="80%" />
+  <img src="images/ui-video.png" width="80%" />
 </div>
 
-> {.fragment} GPT-4o representa la evolución hacia una IA más **natural, rápida y accesible**.
+> <span class="fragment">GPT-4o acerca la interacción IA–humano a un diálogo natural y multimodal.</span>
 
 ---
 
 ## 💡 Aplicaciones reales
 
 :::{.columns}
-::: {.column width="60%"}
-- 🎓 Educación personalizada  
-- 🛠️ Soporte técnico con imagen + voz  
-- ♿ Accesibilidad para baja visión  
-- 🏥 Análisis de imágenes médicas  
-- 🌐 Traducción simultánea
+::: {.column width="55%"}
+- <span class="fragment">🎓 Educación personalizada</span>  
+- <span class="fragment">🛠️ Soporte técnico con imagen + voz</span>  
+- <span class="fragment">♿ Accesibilidad para baja visión</span>  
+- <span class="fragment">🏥 Análisis de imágenes médicas</span>  
+- <span class="fragment">🌐 Traducción simultánea</span>
 :::
-
-::: {.column width="40%"}
-<img src="https://images.unsplash.com/photo-1555949963-aa79dcee981d?fit=crop&w=500&q=80" width="100%" style="border-radius: 12px;" />
+::: {.column width="45%"}
+<img src="images/edu.jpg" width="100%" style="border-radius:12px;" />
 :::
 :::
 
@@ -100,26 +94,21 @@ GPT-4o es un modelo de:
 
 ::: incremental
 - Integración con hardware (IoT, gafas inteligentes)  
-- Interfaces sin pantallas  
-- Asistentes autónomos que “ven y oyen”  
-- Proyectos open-source multimodales
+- Interfaces **voice-first** (sin pantalla)  
+- Agentes autónomos que “ven y oyen”  
+- Ecosistema open-source multimodal en crecimiento  
 :::
 
 ---
 
-## ⚖️ Comparación: GPT-4 vs GPT-4o
+## ⚖️ Comparación GPT-4 vs GPT-4o
 
-| Característica       | GPT-4           | **GPT-4o**        |
-|----------------------|-----------------|--------------------|
-| Multimodalidad       | Limitada        | Nativa completa    |
-| Entrada de voz       | No              | Sí                 |
-| Salida hablada       | No              | Sí, natural        |
-| Latencia             | Alta            | Baja               |
-| Costo API            | Alto            | Más accesible      |
-
-<div style="text-align:center">
-  <img src="https://openai.com/_next/image?url=%2Fimages%2Fmodel-card-gpt-4o%2Fhero%2Fvideo-ui.png&w=1080&q=75" width="80%" />
-</div>
+| Característica            | GPT-4           | **GPT-4o** |
+|---------------------------|-----------------|------------|
+| Multimodalidad            | Limitada        | Nativa     |
+| Entrada / salida de voz   | No              | Sí         |
+| Latencia                  | Alta            | Baja       |
+| Costo API                 | Alto            | ↓          |
 
 ---
 
@@ -127,9 +116,9 @@ GPT-4o es un modelo de:
 
 ::: incremental
 - Interacción más natural  
-- Rápido y accesible  
-- Ideal para productos modernos  
-- Gratis en versión limitada desde ChatGPT
+- Respuestas instantáneas  
+- Mejor costo-beneficio  
+- Versión limitada gratis en ChatGPT  
 :::
 
 ---
@@ -138,38 +127,50 @@ GPT-4o es un modelo de:
 
 ::: incremental
 - Moderación de contenido sensible  
-- Desinformación generada por IA  
+- Riesgos de desinformación (deepfakes)  
 - Privacidad y ética de uso  
-- Alta demanda computacional
+- Alta demanda computacional  
 :::
 
 ---
 
-## 🧠 Conclusiones
+## 🧩 Conclusiones
 
 ::: incremental
-- GPT-4o marca una nueva generación de IA  
-- La multimodalidad ya es una realidad  
-- Impacta positivamente en educación, salud, productividad  
-- Aumenta la accesibilidad para millones de personas
+- GPT-4o inaugura una nueva generación de IA intuitiva  
+- La multimodalidad **ya es el presente**  
+- Grandes oportunidades en educación, salud y productividad  
+- Evolución continua: avances rápidos por venir  
 :::
 
 ---
 
+<!-- _auto-animate: false -->
 ## 🙌 ¡Gracias por su atención!
 
-📍Presentación elaborada en  
-**Quarto + Reveal.js**  
-*Periodo 2-2025 – CENFOTEC*
+Presentación elaborada con **Quarto + Reveal.js**  
+_Periodo 2-2025 – CENFOTEC_
 
-<div style="text-align:center; margin-top: 20px;">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/OpenAI_Logo.svg/512px-OpenAI_Logo.svg.png" width="80" />
+<div style="text-align:center; margin-top:20px;">
+  <img src="images/openai-logo.png" width="80" />
 </div>
 
 ---
 
-## ❓¿Preguntas?
+<!-- _auto-animate: false -->
 
-<div style="text-align:center">
-  <img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmluZXBvdHNvazU3eHN0eWFnNm81OTExaXp0a3B1ZXYwZGFyNGp3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oS8QRKMc1SFVNuUMrG/giphy.gif" width="50%" />
+<div style="margin-top:120px;">
+ ❓ Preguntas
 </div>
+
+:::{.columns}
+::: {.column width="48%"}
+<div style="margin-top:70px;">
+  **Siéntanse libres de consultar**
+</div>
+:::
+::: {.column width="32%"}
+<img src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExZmluZXBvdHNvazU3eHN0eWFnNm81OTExaXp0a3B1ZXYwZGFyNGp3bSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/oS8QRKMc1SFVNuUMrG/giphy.gif"
+     width="100%" style="border-radius:12px;" />
+:::
+:::

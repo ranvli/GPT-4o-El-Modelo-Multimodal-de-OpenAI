@@ -27,11 +27,11 @@ Investigar y exponer los principales conceptos sobre **modelos de inteligencia a
 
 ## 📂 Estructura del proyecto
 
-📁 gpt4o-presentacion/
-├── gpt4o.qmd # Archivo principal de presentación
-├── gpt4o.html # Salida renderizada en HTML
-├── images/ # Carpeta opcional para recursos visuales
-└── README.md # Este archivo
+-📁 gpt4o-presentacion/
+-├── gpt4o.qmd # Archivo principal de presentación
+-├── gpt4o.html # Salida renderizada en HTML
+-├── images/ # Carpeta opcional para recursos visuales
+-└── README.md # Este archivo
 
 ---
 
