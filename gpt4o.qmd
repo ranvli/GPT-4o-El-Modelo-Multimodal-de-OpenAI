@@ -1,148 +1,196 @@
 ---
 title: "GPT-4o: El Modelo Multimodal de OpenAI"
+subtitle: "Universidad CENFOTEC · PSWE-04 · Periodo 2-2025"
 author: "Randall Vargas Li"
 format:
   revealjs:
     theme: dracula
     transition: slide
-    background-transition: fade
     slide-number: true
-    center: true
-    toc: false
-    chalkboard: true
+    smaller: true
+    center: false
+    margin: 0.08
     width: 1280
     height: 720
-    auto-animate: true
-highlight-style: github
 ---
 
-# GPT-4o  <img src="https://media.discordapp.net/attachments/1395566286439710772/1397716822672932994/a8302d1d-c358-4526-8769-e00c26efce14.png?ex=6882bcba&is=68816b3a&hm=d71b426997926fe057cdcea091c16042683d874a820fbbef9bd4ec814e59327f&=&format=webp&quality=lossless&width=856&height=856" width="25%" />
-### EL MODELO MULTIMODAL DE OPENAI
+<style>
+/* Tipografías responsivas con clamp para distintos tamaños de pantalla */
+:root {
+  --base-size: clamp(18px, 1.6vw + 0.2rem, 28px);
+  --h1-size: clamp(36px, 5.2vw, 72px);
+  --h2-size: clamp(30px, 3.6vw, 48px);
+  --h3-size: clamp(24px, 2.6vw, 36px);
+}
 
-<small>Presentado por Randall Vargas Li · CENFOTEC – 2-2025</small>
+.reveal h1 { font-size: var(--h1-size); }
+.reveal h2 { font-size: var(--h2-size); }
+.reveal h3 { font-size: var(--h3-size); }
+.reveal p, .reveal li, .reveal table { font-size: var(--base-size); line-height: 1.35; }
+
+/* Evitar cortes: permitir scroll vertical en todas las slides */
+.reveal .slides section { overflow-y: auto; }
+
+/* Tablas legibles */
+.reveal table { width: 100%; }
+.reveal table th, .reveal table td { padding: 10px 12px; vertical-align: top; }
+
+/* Listas más compactas */
+.reveal ul { margin-left: 1.2em; }
+.reveal ul li { margin: 0.25em 0; }
+
+/* Separación de subtítulo/autor en la portada */
+#title-slide .quarto-title-block .quarto-title-authors {
+  margin-top: 0.5em;
+}
+</style>
 
 ---
 
 ## 🎯 Objetivos de la investigación
-
-::: incremental
-- Sintetizar los hallazgos sobre GPT-4o  
-- Clasificar el modelo en el contexto actual de IA  
-- Identificar aplicaciones reales y su impacto  
-- Comunicar con **Quarto + Reveal.js**  
-:::
+- Comprender el funcionamiento y la clasificación de **GPT‑4o**.
+- Identificar **aplicaciones reales** y evaluar su impacto en distintos sectores.
+- Comunicar con **Quarto + Reveal.js** siguiendo la consigna del curso.
 
 ---
 
 ## 🧠 Clasificación del modelo
+**GPT‑4o** es un modelo de:
+- **IA Generativa** – produce contenido nuevo.
+- **Multimodalidad nativa** – combina texto, imágenes y audio.
+- **Propósito general (incipiente AGI)**.
 
-GPT-4o es un modelo de:
+### 📊 Tipos de IA
 
-- <span class="fragment">Inteligencia Artificial Generativa</span>  
-- <span class="fragment">Multimodalidad nativa</span>  
-- <span class="fragment">Propósito general (incipiente AGI)</span>  
+| Tipo de IA       | Flexibilidad           | Aprendizaje            | Ejemplos                              |
+|------------------|------------------------|------------------------|---------------------------------------|
+| **Narrow AI**    | Limitada a una tarea   | Reentrenamiento        | Asistentes virtuales, visión por IA   |
+| **AGI**          | Muy adaptable          | Aprendizaje autónomo   | Hipotético, aún no alcanzado          |
 
-> <span class="fragment">Evolución de la familia **GPT-4** con capacidades expandidas.</span>
+::: notes
+AGI: inteligencia capaz de realizar **cualquier tarea cognitiva** similar a la humana.  
+GPT‑4o no es AGI, pero muestra **versatilidad** y multimodalidad nativa.
+:::
 
 ---
 
 ## ⚙️ Características principales
+- Procesamiento nativo de **texto, imágenes y audio**.
+- **Tiempo real** con baja latencia (ideal para voz y video).
+- Entrada/salida de **voz** integradas.
+- **Mejor costo‑beneficio** frente a GPT‑4 Turbo.
 
-::: incremental
-- Procesamiento nativo de texto, imágenes y audio  
-- Respuestas en **tiempo real**  
-- Entrada / salida de voz integradas  
-- Más rápido y económico que GPT-4 Turbo  
-:::
+### 🌍 Ejemplos de uso industrial
+| Industria / Nicho           | Aplicación concreta                               |
+|-----------------------------|---------------------------------------------------|
+| Marketing / Finanzas        | Reportes automáticos con gráficos e insights     |
+| Educación / RRHH            | Simulación de entrevistas, tutorías interactivas |
+| Salud                       | Apoyo en análisis de imágenes médicas            |
+| Retail / Manufactura        | Verificación visual / reconocimiento de productos |
+| Transporte / Movilidad      | Asistente para transición a **EVs**              |
+| Arquitectura / Diseño       | Renders rápidos desde planos o fotos             |
 
 ---
 
-## 💡 Aplicaciones reales
+## 🏭 Aplicaciones reales
+- **Educación personalizada** (explicaciones y ejercicios adaptativos).
+- **Traducción simultánea** voz ↔ texto.
+- **Asistentes conversacionales** que ven/escuchan.
+- **Accesibilidad**: descripción de imágenes para baja visión.
 
-:::{.columns}
-::: {.column width="60%"}
-- <span class="fragment">🎓 Educación personalizada</span>  
-- <span class="fragment">🛠️ Soporte técnico con imagen + voz</span>  
-- <span class="fragment">♿ Accesibilidad para baja visión</span>  
-- <span class="fragment">🏥 Análisis de imágenes médicas</span>  
-- <span class="fragment">🌐 Traducción simultánea</span>
-:::
-::: {.column width="40%"}
-:::
+### 🛡️ Seguridad y salud ocupacional
+| Aplicación                  | Descripción breve                                  | Beneficios clave                 |
+|-----------------------------|----------------------------------------------------|----------------------------------|
+| Detección de **derrames**   | Visión detecta líquidos peligrosos en tiempo real | Respuesta inmediata, menor riesgo |
+| Supervisión de **PPE**      | Validación de casco, gafas, guantes               | Cumplimiento normativo            |
+| **Alertas** multimodales    | GPT‑4o emite instrucciones por voz o texto        | Comunicación instantánea          |
+
+::: notes
+Ejemplo: almacén químico → derrame corrosivo → detección automática → alerta al encargado (voz/SMS/dashboard).
 :::
 
 ---
 
 ## 📈 Tendencias
+- Integración con **hardware** (gafas, IoT, robots).
+- Interfaces **voice‑first** (menos pantalla, más voz).
+- **Open‑source multimodal** en crecimiento.
 
-::: incremental
-- Integración con hardware (IoT, gafas inteligentes)  
-- Interfaces **voice-first** (sin pantalla)  
-- Agentes autónomos que “ven y oyen”  
-- Ecosistema open-source multimodal en crecimiento  
-:::
+### 🔑 Modelos clave
+- **CLIP** – aprendizaje **contrastivo** texto‑imagen; permite **zero‑shot** (clasificar sin reentrenar específico).  
+- **LLaVA** – asistente multimodal **open‑source** (CLIP + LLaMA/Vicuna) con *visual instruction tuning*.
 
 ---
 
-## ⚖️ Comparación GPT-4 vs GPT-4o
+## ⚖️ GPT‑4 vs GPT‑4o
+| Aspecto                  | GPT‑4                  | **GPT‑4o**                     |
+|--------------------------|------------------------|--------------------------------|
+| Multimodalidad           | Parcial (texto+imagen) | **Nativa (texto, imagen, voz)** |
+| Latencia                 | Mayor                  | **Muy baja (tiempo real)**     |
+| Costo API                | Más alto               | **Más económico**              |
 
-| Característica            | GPT-4           | **GPT-4o** |
-|---------------------------|-----------------|------------|
-| Multimodalidad            | Limitada        | Nativa     |
-| Entrada / salida de voz   | No              | Sí         |
-| Latencia                  | Alta            | Baja       |
-| Costo API                 | Alto            | Más accesible          |
+> ℹ️ **Azure**: el **AI Studio** puede mostrar la última versión en el UI,  
+> pero **no siempre** está lista para **producción/API** en tu región. Verifica la versión **comercial** (p. ej., `gpt‑4o‑2024‑11‑20`).
 
 ---
 
 ## ✅ Ventajas
-
-::: incremental
-- Interacción más natural  
-- Respuestas instantáneas  
-- Mejor costo-beneficio  
-- Versión limitada gratis en ChatGPT  
-:::
+- Interacción más **natural y rápida**.
+- **Multimodalidad nativa** en un solo modelo.
+- **Costo reducido** y versión gratuita limitada en ChatGPT.
 
 ---
 
 ## ⚠️ Desafíos
+- Mal uso: **deepfakes**, estafas de **voz**, **desinformación**.
+- **Privacidad** y manejo de datos sensibles.
+- **Costos energéticos** y de cómputo.
 
-::: incremental
-- Moderación de contenido sensible  
-- Riesgos de desinformación (deepfakes)  
-- Privacidad y ética de uso  
-- Alta demanda computacional  
-:::
-
----
-
-## 🧩 Conclusiones
-
-::: incremental
-- GPT-4o inaugura una nueva generación de IA intuitiva  
-- La multimodalidad **ya es el presente**  
-- Grandes oportunidades en educación, salud y productividad  
-- Evolución continua: avances rápidos por venir  
-:::
+### Casos conocidos
+| Tipo de mal uso       | Descripción                                 | Ejemplo real                       |
+|-----------------------|---------------------------------------------|-------------------------------------|
+| Deepfakes sexuales    | Imágenes íntimas falsas sin consentimiento | Taylor Swift                        |
+| Estafas de voz        | Clonación de voz para fraudes financieros  | Robo de **35 M USD** (UAE)          |
+| Documentos falsos     | Citas inventadas en juicios                | Abogados sancionados (Alabama, 2025)|
+| Desinformación        | Manipulación política con IA               | Deepfakes de líderes públicos       |
 
 ---
 
-## 🙌 ¡Gracias por su atención!
+## 📚 Fuentes y lecturas recomendadas
 
-Presentación elaborada con **Quarto + Reveal.js**  
-_Periodo 2-2025 – CENFOTEC_
+1. **OpenAI.** “Hello GPT‑4o.” 13 mayo 2024.  
+   <https://openai.com/index/hello-gpt-4o/>
+
+2. **Microsoft Learn.** “Azure OpenAI in Azure AI Foundry – Models (GPT‑4o, versiones y disponibilidad).”  
+   <https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models>
+
+3. **Microsoft Learn.** “What’s new in Azure OpenAI.” (Disponibilidad `gpt‑4o‑2024‑08‑06`, `2024‑11‑20`, etc.)  
+   <https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new>
+
+4. **Radford, A. et al.** “Learning Transferable Visual Models From Natural Language Supervision (CLIP).” *arXiv*, 2021.  
+   <https://arxiv.org/abs/2103.00020>
+
+5. **Liu, H. et al.** “Visual Instruction Tuning (LLaVA).” *arXiv*, 2023.  
+   <https://arxiv.org/abs/2304.08485>
+
+6. **AP News.** “Pornographic deepfake images of Taylor Swift spread on social media.” 2024.  
+   <https://apnews.com/article/taylor-swift-ai-images-protecttaylorswift-nonconsensual-d5eb3f98084bcbb670a185f7aeec78b1>
+
+7. **Reuters.** “Judge disqualifies three Butler Snow attorneys from case over AI citations.” 2025.  
+   <https://www.reuters.com/legal/government/judge-disqualifies-three-butler-snow-attorneys-case-over-ai-citations-2025-07-24/>
+
+8. **Forbes.** “Fraudsters Cloned Company Director’s Voice In $35 Million Heist.” 2021.  
+   <https://www.forbes.com/sites/thomasbrewster/2021/10/14/huge-bank-fraud-uses-deep-fake-voice-tech-to-steal-millions/>
+
+9. **AP News.** “X pauses Taylor Swift searches due to deepfake explicit images.” 2024.  
+   <https://apnews.com/article/taylor-swift-deepfake-images-x-protecttaylorswift-6e5f9d086d1923a1cf5f5cde39fc890a>
+
+10. **TechCrunch / Reuters.** “Uber to launch OpenAI GPT‑4o assistant to ayudar a conductores a pasar a EVs.” 2024.  
+    <https://www.reuters.com/technology/artificial-intelligence/uber-launch-ai-assistant-powered-by-openais-gpt-4o-help-drivers-go-electric-2024-10-08/>
 
 ---
 
-
-## <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHkxNGhuenM5ZjFwcmgxOGQ2aW1sbm5sNDBvdTU5b2JhYTg2a3JseSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/d5aiqCZFmvZtMWEebC/giphy.gif"
-     width="10%" style="border-radius:12px;" /> Preguntas
-
-:::{.columns}
-::: {.column width="55%"}
-<div style="margin-top:50px;">
-  **Siéntanse libres de consultar**
-</div>
-:::
-:::
+## 🏁 Conclusiones
+- **GPT‑4o** es un avance clave hacia la **IA multimodal accesible**.
+- Alto potencial en **educación, salud, accesibilidad y productividad**.
+- Requiere **uso responsable** y verificación humana en contextos críticos.

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head>
-<script src="gpt4o_files/libs/clipboard/clipboard.min.js"></script>
-<script src="gpt4o_files/libs/quarto-html/tabby.min.js"></script>
-<script src="gpt4o_files/libs/quarto-html/popper.min.js"></script>
-<script src="gpt4o_files/libs/quarto-html/tippy.umd.min.js"></script>
-<link href="gpt4o_files/libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="gpt4o_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="gpt4o_files/libs/quarto-html/quarto-syntax-highlighting-dark-0348920b7671f696dc9078d39bff215e.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<script src="gpt4o_final_responsive_files/libs/clipboard/clipboard.min.js"></script>
+<script src="gpt4o_final_responsive_files/libs/quarto-html/tabby.min.js"></script>
+<script src="gpt4o_final_responsive_files/libs/quarto-html/popper.min.js"></script>
+<script src="gpt4o_final_responsive_files/libs/quarto-html/tippy.umd.min.js"></script>
+<link href="gpt4o_final_responsive_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="gpt4o_final_responsive_files/libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="gpt4o_final_responsive_files/libs/quarto-html/quarto-syntax-highlighting-dark-2fef5ea3f8957b3e4ecc936fc74692ca.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.7.32">
 
   <meta name="author" content="Randall Vargas Li">
@@ -14,8 +14,8 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-  <link rel="stylesheet" href="gpt4o_files/libs/revealjs/dist/reset.css">
-  <link rel="stylesheet" href="gpt4o_files/libs/revealjs/dist/reveal.css">
+  <link rel="stylesheet" href="gpt4o_final_responsive_files/libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="gpt4o_final_responsive_files/libs/revealjs/dist/reveal.css">
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -29,13 +29,11 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="gpt4o_files/libs/revealjs/dist/theme/quarto-175ec1c0ea92bc532c45781632c4e35e.css">
-  <link href="gpt4o_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
-  <link href="gpt4o_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
-  <link href="gpt4o_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
-  <link href="gpt4o_files/libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
-  <link href="gpt4o_files/libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
-  <link href="gpt4o_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <link rel="stylesheet" href="gpt4o_final_responsive_files/libs/revealjs/dist/theme/quarto-175ec1c0ea92bc532c45781632c4e35e.css">
+  <link href="gpt4o_final_responsive_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="gpt4o_final_responsive_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="gpt4o_final_responsive_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="gpt4o_final_responsive_files/libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
   <style type="text/css">
     .reveal div.sourceCode {
       margin: 0;
@@ -130,6 +128,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title">GPT-4o: El Modelo Multimodal de OpenAI</h1>
+  <p class="subtitle">Universidad CENFOTEC · PSWE-04 · Periodo 2-2025</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -140,173 +139,337 @@ Randall Vargas Li
 </div>
 
 </section>
-<section>
-<section id="gpt-4o" class="title-slide slide level1 center">
-<h1>GPT-4o <img src="https://media.discordapp.net/attachments/1395566286439710772/1397716822672932994/a8302d1d-c358-4526-8769-e00c26efce14.png?ex=6882bcba&amp;is=68816b3a&amp;hm=d71b426997926fe057cdcea091c16042683d874a820fbbef9bd4ec814e59327f&amp;=&amp;format=webp&amp;quality=lossless&amp;width=856&amp;height=856" width="25%"></h1>
+<section class="slide level2">
 
+<style>
+/* Tipografías responsivas con clamp para distintos tamaños de pantalla */
+:root {
+  --base-size: clamp(18px, 1.6vw + 0.2rem, 28px);
+  --h1-size: clamp(36px, 5.2vw, 72px);
+  --h2-size: clamp(30px, 3.6vw, 48px);
+  --h3-size: clamp(24px, 2.6vw, 36px);
+}
+
+.reveal h1 { font-size: var(--h1-size); }
+.reveal h2 { font-size: var(--h2-size); }
+.reveal h3 { font-size: var(--h3-size); }
+.reveal p, .reveal li, .reveal table { font-size: var(--base-size); line-height: 1.35; }
+
+/* Evitar cortes: permitir scroll vertical en todas las slides */
+.reveal .slides section { overflow-y: auto; }
+
+/* Tablas legibles */
+.reveal table { width: 100%; }
+.reveal table th, .reveal table td { padding: 10px 12px; vertical-align: top; }
+
+/* Listas más compactas */
+.reveal ul { margin-left: 1.2em; }
+.reveal ul li { margin: 0.25em 0; }
+
+/* Separación de subtítulo/autor en la portada */
+#title-slide .quarto-title-block .quarto-title-authors {
+  margin-top: 0.5em;
+}
+</style>
 </section>
-<h3 id="el-modelo-multimodal-de-openai">EL MODELO MULTIMODAL DE OPENAI</h3>
-<p><small>Presentado por Randall Vargas Li · CENFOTEC – 2-2025</small></p>
-<section id="objetivos-de-la-investigación" class="slide level2 center">
+<section id="objetivos-de-la-investigación" class="slide level2">
 <h2>🎯 Objetivos de la investigación</h2>
 <ul>
-<li class="fragment">Sintetizar los hallazgos sobre GPT-4o<br>
-</li>
-<li class="fragment">Clasificar el modelo en el contexto actual de IA<br>
-</li>
-<li class="fragment">Identificar aplicaciones reales y su impacto<br>
-</li>
-<li class="fragment">Comunicar con <strong>Quarto + Reveal.js</strong><br>
-</li>
+<li>Comprender el funcionamiento y la clasificación de <strong>GPT‑4o</strong>.</li>
+<li>Identificar <strong>aplicaciones reales</strong> y evaluar su impacto en distintos sectores.</li>
+<li>Comunicar con <strong>Quarto + Reveal.js</strong> siguiendo la consigna del curso.</li>
 </ul>
 </section>
-<section id="clasificación-del-modelo" class="slide level2 center">
+<section id="clasificación-del-modelo" class="slide level2">
 <h2>🧠 Clasificación del modelo</h2>
-<p>GPT-4o es un modelo de:</p>
-<ul>
-<li><span class="fragment">Inteligencia Artificial Generativa</span><br>
-</li>
-<li><span class="fragment">Multimodalidad nativa</span><br>
-</li>
-<li><span class="fragment">Propósito general (incipiente AGI)</span></li>
-</ul>
-<blockquote>
-<p><span class="fragment">Evolución de la familia <strong>GPT-4</strong> con capacidades expandidas.</span></p>
-</blockquote>
-</section>
-<section id="características-principales" class="slide level2 center">
-<h2>⚙️ Características principales</h2>
-<ul>
-<li class="fragment">Procesamiento nativo de texto, imágenes y audio<br>
-</li>
-<li class="fragment">Respuestas en <strong>tiempo real</strong><br>
-</li>
-<li class="fragment">Entrada / salida de voz integradas<br>
-</li>
-<li class="fragment">Más rápido y económico que GPT-4 Turbo<br>
-</li>
-</ul>
-</section>
-<section id="aplicaciones-reales" class="slide level2 center">
-<h2>💡 Aplicaciones reales</h2>
-<div class="columns">
-<div class="column" style="width:60%;">
-<ul>
-<li><span class="fragment">🎓 Educación personalizada</span><br>
-</li>
-<li><span class="fragment">🛠️ Soporte técnico con imagen + voz</span><br>
-</li>
-<li><span class="fragment">♿ Accesibilidad para baja visión</span><br>
-</li>
-<li><span class="fragment">🏥 Análisis de imágenes médicas</span><br>
-</li>
-<li><span class="fragment">🌐 Traducción simultánea</span></li>
-</ul>
-</div><div class="column" style="width:40%;">
-
-</div></div>
-</section>
-<section id="tendencias" class="slide level2 center">
-<h2>📈 Tendencias</h2>
-<ul>
-<li class="fragment">Integración con hardware (IoT, gafas inteligentes)<br>
-</li>
-<li class="fragment">Interfaces <strong>voice-first</strong> (sin pantalla)<br>
-</li>
-<li class="fragment">Agentes autónomos que “ven y oyen”<br>
-</li>
-<li class="fragment">Ecosistema open-source multimodal en crecimiento<br>
-</li>
-</ul>
-</section>
-<section id="comparación-gpt-4-vs-gpt-4o" class="slide level2 center">
-<h2>⚖️ Comparación GPT-4 vs GPT-4o</h2>
+<p><strong>GPT‑4o</strong> es un modelo de: - <strong>IA Generativa</strong> – produce contenido nuevo. - <strong>Multimodalidad nativa</strong> – combina texto, imágenes y audio. - <strong>Propósito general (incipiente AGI)</strong>.</p>
+<h3 id="tipos-de-ia">📊 Tipos de IA</h3>
 <table class="caption-top">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 22%">
+<col style="width: 22%">
+<col style="width: 37%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Característica</th>
-<th>GPT-4</th>
-<th><strong>GPT-4o</strong></th>
+<th>Tipo de IA</th>
+<th>Flexibilidad</th>
+<th>Aprendizaje</th>
+<th>Ejemplos</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Narrow AI</strong></td>
+<td>Limitada a una tarea</td>
+<td>Reentrenamiento</td>
+<td>Asistentes virtuales, visión por IA</td>
+</tr>
+<tr class="even">
+<td><strong>AGI</strong></td>
+<td>Muy adaptable</td>
+<td>Aprendizaje autónomo</td>
+<td>Hipotético, aún no alcanzado</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>AGI: inteligencia capaz de realizar <strong>cualquier tarea cognitiva</strong> similar a la humana.<br>
+GPT‑4o no es AGI, pero muestra <strong>versatilidad</strong> y multimodalidad nativa.</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="características-principales" class="slide level2">
+<h2>⚙️ Características principales</h2>
+<ul>
+<li>Procesamiento nativo de <strong>texto, imágenes y audio</strong>.</li>
+<li><strong>Tiempo real</strong> con baja latencia (ideal para voz y video).</li>
+<li>Entrada/salida de <strong>voz</strong> integradas.</li>
+<li><strong>Mejor costo‑beneficio</strong> frente a GPT‑4 Turbo.</li>
+</ul>
+<h3 id="ejemplos-de-uso-industrial">🌍 Ejemplos de uso industrial</h3>
+<table class="caption-top">
+<colgroup>
+<col style="width: 36%">
+<col style="width: 63%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Industria / Nicho</th>
+<th>Aplicación concreta</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Marketing / Finanzas</td>
+<td>Reportes automáticos con gráficos e insights</td>
+</tr>
+<tr class="even">
+<td>Educación / RRHH</td>
+<td>Simulación de entrevistas, tutorías interactivas</td>
+</tr>
+<tr class="odd">
+<td>Salud</td>
+<td>Apoyo en análisis de imágenes médicas</td>
+</tr>
+<tr class="even">
+<td>Retail / Manufactura</td>
+<td>Verificación visual / reconocimiento de productos</td>
+</tr>
+<tr class="odd">
+<td>Transporte / Movilidad</td>
+<td>Asistente para transición a <strong>EVs</strong></td>
+</tr>
+<tr class="even">
+<td>Arquitectura / Diseño</td>
+<td>Renders rápidos desde planos o fotos</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="aplicaciones-reales" class="slide level2">
+<h2>🏭 Aplicaciones reales</h2>
+<ul>
+<li><strong>Educación personalizada</strong> (explicaciones y ejercicios adaptativos).</li>
+<li><strong>Traducción simultánea</strong> voz ↔︎ texto.</li>
+<li><strong>Asistentes conversacionales</strong> que ven/escuchan.</li>
+<li><strong>Accesibilidad</strong>: descripción de imágenes para baja visión.</li>
+</ul>
+<h3 id="seguridad-y-salud-ocupacional">🛡️ Seguridad y salud ocupacional</h3>
+<table class="caption-top">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 45%">
+<col style="width: 29%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aplicación</th>
+<th>Descripción breve</th>
+<th>Beneficios clave</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Detección de <strong>derrames</strong></td>
+<td>Visión detecta líquidos peligrosos en tiempo real</td>
+<td>Respuesta inmediata, menor riesgo</td>
+</tr>
+<tr class="even">
+<td>Supervisión de <strong>PPE</strong></td>
+<td>Validación de casco, gafas, guantes</td>
+<td>Cumplimiento normativo</td>
+</tr>
+<tr class="odd">
+<td><strong>Alertas</strong> multimodales</td>
+<td>GPT‑4o emite instrucciones por voz o texto</td>
+<td>Comunicación instantánea</td>
+</tr>
+</tbody>
+</table>
+<aside class="notes">
+<p>Ejemplo: almacén químico → derrame corrosivo → detección automática → alerta al encargado (voz/SMS/dashboard).</p>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
+</section>
+<section id="tendencias" class="slide level2">
+<h2>📈 Tendencias</h2>
+<ul>
+<li>Integración con <strong>hardware</strong> (gafas, IoT, robots).</li>
+<li>Interfaces <strong>voice‑first</strong> (menos pantalla, más voz).</li>
+<li><strong>Open‑source multimodal</strong> en crecimiento.</li>
+</ul>
+<h3 id="modelos-clave">🔑 Modelos clave</h3>
+<ul>
+<li><strong>CLIP</strong> – aprendizaje <strong>contrastivo</strong> texto‑imagen; permite <strong>zero‑shot</strong> (clasificar sin reentrenar específico).<br>
+</li>
+<li><strong>LLaVA</strong> – asistente multimodal <strong>open‑source</strong> (CLIP + LLaMA/Vicuna) con <em>visual instruction tuning</em>.</li>
+</ul>
+</section>
+<section id="gpt4-vs-gpt4o" class="slide level2">
+<h2>⚖️ GPT‑4 vs GPT‑4o</h2>
+<table class="caption-top">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 29%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspecto</th>
+<th>GPT‑4</th>
+<th><strong>GPT‑4o</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
 <td>Multimodalidad</td>
-<td>Limitada</td>
-<td>Nativa</td>
+<td>Parcial (texto+imagen)</td>
+<td><strong>Nativa (texto, imagen, voz)</strong></td>
 </tr>
 <tr class="even">
-<td>Entrada / salida de voz</td>
-<td>No</td>
-<td>Sí</td>
+<td>Latencia</td>
+<td>Mayor</td>
+<td><strong>Muy baja (tiempo real)</strong></td>
 </tr>
 <tr class="odd">
-<td>Latencia</td>
-<td>Alta</td>
-<td>Baja</td>
+<td>Costo API</td>
+<td>Más alto</td>
+<td><strong>Más económico</strong></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>ℹ️ <strong>Azure</strong>: el <strong>AI Studio</strong> puede mostrar la última versión en el UI,<br>
+pero <strong>no siempre</strong> está lista para <strong>producción/API</strong> en tu región. Verifica la versión <strong>comercial</strong> (p.&nbsp;ej., <code>gpt‑4o‑2024‑11‑20</code>).</p>
+</blockquote>
+</section>
+<section id="ventajas" class="slide level2">
+<h2>✅ Ventajas</h2>
+<ul>
+<li>Interacción más <strong>natural y rápida</strong>.</li>
+<li><strong>Multimodalidad nativa</strong> en un solo modelo.</li>
+<li><strong>Costo reducido</strong> y versión gratuita limitada en ChatGPT.</li>
+</ul>
+</section>
+<section id="desafíos" class="slide level2">
+<h2>⚠️ Desafíos</h2>
+<ul>
+<li>Mal uso: <strong>deepfakes</strong>, estafas de <strong>voz</strong>, <strong>desinformación</strong>.</li>
+<li><strong>Privacidad</strong> y manejo de datos sensibles.</li>
+<li><strong>Costos energéticos</strong> y de cómputo.</li>
+</ul>
+<h3 id="casos-conocidos">Casos conocidos</h3>
+<table class="caption-top">
+<colgroup>
+<col style="width: 21%">
+<col style="width: 42%">
+<col style="width: 35%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de mal uso</th>
+<th>Descripción</th>
+<th>Ejemplo real</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Deepfakes sexuales</td>
+<td>Imágenes íntimas falsas sin consentimiento</td>
+<td>Taylor Swift</td>
 </tr>
 <tr class="even">
-<td>Costo API</td>
-<td>Alto</td>
-<td>Más accesible</td>
+<td>Estafas de voz</td>
+<td>Clonación de voz para fraudes financieros</td>
+<td>Robo de <strong>35 M USD</strong> (UAE)</td>
+</tr>
+<tr class="odd">
+<td>Documentos falsos</td>
+<td>Citas inventadas en juicios</td>
+<td>Abogados sancionados (Alabama, 2025)</td>
+</tr>
+<tr class="even">
+<td>Desinformación</td>
+<td>Manipulación política con IA</td>
+<td>Deepfakes de líderes públicos</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="ventajas" class="slide level2 center">
-<h2>✅ Ventajas</h2>
+<section id="fuentes-y-lecturas-recomendadas" class="slide level2">
+<h2>📚 Fuentes y lecturas recomendadas</h2>
+<ol type="1">
+<li><p><strong>OpenAI.</strong> “Hello GPT‑4o.” 13 mayo 2024.<br>
+<a href="https://openai.com/index/hello-gpt-4o/" class="uri">https://openai.com/index/hello-gpt-4o/</a></p></li>
+<li><p><strong>Microsoft Learn.</strong> “Azure OpenAI in Azure AI Foundry – Models (GPT‑4o, versiones y disponibilidad).”<br>
+<a href="https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models" class="uri">https://learn.microsoft.com/en-us/azure/ai-foundry/openai/concepts/models</a></p></li>
+<li><p><strong>Microsoft Learn.</strong> “What’s new in Azure OpenAI.” (Disponibilidad <code>gpt‑4o‑2024‑08‑06</code>, <code>2024‑11‑20</code>, etc.)<br>
+<a href="https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new" class="uri">https://learn.microsoft.com/en-us/azure/ai-foundry/openai/whats-new</a></p></li>
+<li><p><strong>Radford, A. et al.</strong> “Learning Transferable Visual Models From Natural Language Supervision (CLIP).” <em>arXiv</em>, 2021.<br>
+<a href="https://arxiv.org/abs/2103.00020" class="uri">https://arxiv.org/abs/2103.00020</a></p></li>
+<li><p><strong>Liu, H. et al.</strong> “Visual Instruction Tuning (LLaVA).” <em>arXiv</em>, 2023.<br>
+<a href="https://arxiv.org/abs/2304.08485" class="uri">https://arxiv.org/abs/2304.08485</a></p></li>
+<li><p><strong>AP News.</strong> “Pornographic deepfake images of Taylor Swift spread on social media.” 2024.<br>
+<a href="https://apnews.com/article/taylor-swift-ai-images-protecttaylorswift-nonconsensual-d5eb3f98084bcbb670a185f7aeec78b1" class="uri">https://apnews.com/article/taylor-swift-ai-images-protecttaylorswift-nonconsensual-d5eb3f98084bcbb670a185f7aeec78b1</a></p></li>
+<li><p><strong>Reuters.</strong> “Judge disqualifies three Butler Snow attorneys from case over AI citations.” 2025.<br>
+<a href="https://www.reuters.com/legal/government/judge-disqualifies-three-butler-snow-attorneys-case-over-ai-citations-2025-07-24/" class="uri">https://www.reuters.com/legal/government/judge-disqualifies-three-butler-snow-attorneys-case-over-ai-citations-2025-07-24/</a></p></li>
+<li><p><strong>Forbes.</strong> “Fraudsters Cloned Company Director’s Voice In $35 Million Heist.” 2021.<br>
+<a href="https://www.forbes.com/sites/thomasbrewster/2021/10/14/huge-bank-fraud-uses-deep-fake-voice-tech-to-steal-millions/" class="uri">https://www.forbes.com/sites/thomasbrewster/2021/10/14/huge-bank-fraud-uses-deep-fake-voice-tech-to-steal-millions/</a></p></li>
+<li><p><strong>AP News.</strong> “X pauses Taylor Swift searches due to deepfake explicit images.” 2024.<br>
+<a href="https://apnews.com/article/taylor-swift-deepfake-images-x-protecttaylorswift-6e5f9d086d1923a1cf5f5cde39fc890a" class="uri">https://apnews.com/article/taylor-swift-deepfake-images-x-protecttaylorswift-6e5f9d086d1923a1cf5f5cde39fc890a</a></p></li>
+<li><p><strong>TechCrunch / Reuters.</strong> “Uber to launch OpenAI GPT‑4o assistant to ayudar a conductores a pasar a EVs.” 2024.<br>
+<a href="https://www.reuters.com/technology/artificial-intelligence/uber-launch-ai-assistant-powered-by-openais-gpt-4o-help-drivers-go-electric-2024-10-08/" class="uri">https://www.reuters.com/technology/artificial-intelligence/uber-launch-ai-assistant-powered-by-openais-gpt-4o-help-drivers-go-electric-2024-10-08/</a></p></li>
+</ol>
+</section>
+<section id="conclusiones" class="slide level2">
+<h2>🏁 Conclusiones</h2>
 <ul>
-<li class="fragment">Interacción más natural<br>
-</li>
-<li class="fragment">Respuestas instantáneas<br>
-</li>
-<li class="fragment">Mejor costo-beneficio<br>
-</li>
-<li class="fragment">Versión limitada gratis en ChatGPT<br>
-</li>
+<li><strong>GPT‑4o</strong> es un avance clave hacia la <strong>IA multimodal accesible</strong>.</li>
+<li>Alto potencial en <strong>educación, salud, accesibilidad y productividad</strong>.</li>
+<li>Requiere <strong>uso responsable</strong> y verificación humana en contextos críticos.</li>
 </ul>
-</section>
-<section id="desafíos" class="slide level2 center">
-<h2>⚠️ Desafíos</h2>
-<ul>
-<li class="fragment">Moderación de contenido sensible<br>
-</li>
-<li class="fragment">Riesgos de desinformación (deepfakes)<br>
-</li>
-<li class="fragment">Privacidad y ética de uso<br>
-</li>
-<li class="fragment">Alta demanda computacional<br>
-</li>
-</ul>
-</section>
-<section id="conclusiones" class="slide level2 center">
-<h2>🧩 Conclusiones</h2>
-<ul>
-<li class="fragment">GPT-4o inaugura una nueva generación de IA intuitiva<br>
-</li>
-<li class="fragment">La multimodalidad <strong>ya es el presente</strong><br>
-</li>
-<li class="fragment">Grandes oportunidades en educación, salud y productividad<br>
-</li>
-<li class="fragment">Evolución continua: avances rápidos por venir<br>
-</li>
-</ul>
-</section>
-<section id="gracias-por-su-atención" class="slide level2 center">
-<h2>🙌 ¡Gracias por su atención!</h2>
-<p>Presentación elaborada con <strong>Quarto + Reveal.js</strong><br>
-<em>Periodo 2-2025 – CENFOTEC</em></p>
-</section>
-<section id="preguntas" class="slide level2 center">
-<h2><img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHkxNGhuenM5ZjFwcmgxOGQ2aW1sbm5sNDBvdTU5b2JhYTg2a3JseSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/d5aiqCZFmvZtMWEebC/giphy.gif" width="10%" style="border-radius:12px;"> Preguntas</h2>
-<div class="columns">
-<div class="column" style="width:55%;">
-<div style="margin-top:50px;">
-<p><strong>Siéntanse libres de consultar</strong></p>
-</div>
-</div></div>
 
-</section></section>
+</section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
@@ -315,20 +478,19 @@ Randall Vargas Li
 </div></div>
 
   <script>window.backupDefine = window.define; window.define = undefined;</script>
-  <script src="gpt4o_files/libs/revealjs/dist/reveal.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/dist/reveal.js"></script>
   <!-- reveal.js plugins -->
-  <script src="gpt4o_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
-  <script src="gpt4o_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
-  <script src="gpt4o_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
-  <script src="gpt4o_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
-  <script src="gpt4o_files/libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
-  <script src="gpt4o_files/libs/revealjs/plugin/quarto-support/support.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/plugin/quarto-support/support.js"></script>
   
 
-  <script src="gpt4o_files/libs/revealjs/plugin/notes/notes.js"></script>
-  <script src="gpt4o_files/libs/revealjs/plugin/search/search.js"></script>
-  <script src="gpt4o_files/libs/revealjs/plugin/zoom/zoom.js"></script>
-  <script src="gpt4o_files/libs/revealjs/plugin/math/math.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/plugin/search/search.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="gpt4o_final_responsive_files/libs/revealjs/plugin/math/math.js"></script>
   <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
 
   <script>
@@ -343,9 +505,8 @@ Randall Vargas Li
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
-'chalkboard': {"buttons":true},
-'smaller': false,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'smaller': true,
  
         // Display controls in the bottom right corner
         controls: false,
@@ -394,7 +555,7 @@ Randall Vargas Li
         disableLayout: false,
 
         // Vertical centering of slides
-        center: true,
+        center: false,
 
         // Enables touch navigation on devices with touch input
         touch: true,
@@ -477,7 +638,7 @@ Randall Vargas Li
 
         // Transition style for full page slide backgrounds
         // (none/fade/slide/convex/concave/zoom)
-        backgroundTransition: 'fade',
+        backgroundTransition: 'none',
 
         // Number of slides away from the current that are visible
         viewDistance: 3,
@@ -495,7 +656,7 @@ Randall Vargas Li
         height: 720,
 
         // Factor of the display size that should remain empty around the content
-        margin: 0.1,
+        margin: 8.0e-2,
 
         math: {
           mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
@@ -515,7 +676,7 @@ Randall Vargas Li
         },
 
         // reveal.js plugins
-        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, QuartoSupport,
 
           RevealMath,
           RevealNotes,
